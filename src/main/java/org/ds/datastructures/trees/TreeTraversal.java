@@ -105,6 +105,15 @@ public class TreeTraversal {
 
 	public static void main(String[] args) {
 
+		/**
+		 *                      1
+		 *                    /   \
+		 *                   2     3
+		 *                 /   \
+		 *                4     5
+		 *
+		 *
+		 */
 		TreeNode<Integer> l2l = new TreeNode<>(4, null, null);
 		TreeNode<Integer> l2r = new TreeNode<>(5, null, null);
 		TreeNode<Integer> l1l = new TreeNode<>(2, l2l, l2r);
