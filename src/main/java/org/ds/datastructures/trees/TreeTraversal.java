@@ -1,22 +1,24 @@
 package org.ds.datastructures.trees;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class TreeTraversal {
 	private static void preOrder(TreeNode<Integer> root) {
 		if (root == null)
 			return;
-		System.out.print(root.getData() + ",");
+		process( root.getData() );
 		preOrder(root.getLeft());
-		preOrder(root.getRigt());
+		preOrder(root.getRight());
 	}
 
 	private static void inOrder(TreeNode<Integer> root) {
 		if (root == null)
 			return;
 		inOrder(root.getLeft());
-		System.out.print(root.getData() + ",");
-		inOrder(root.getRigt());
+		process( root.getData() );
+		inOrder(root.getRight());
 
 	}
 
@@ -24,8 +26,8 @@ public class TreeTraversal {
 		if (root == null)
 			return;
 		postOrder(root.getLeft());
-		postOrder(root.getRigt());
-		System.out.print(root.getData() + ",");
+		postOrder(root.getRight());
+		process( root.getData() );
 	}
 	
 	private static void preOrderIterative(TreeNode<Integer> root) {
@@ -35,9 +37,9 @@ public class TreeTraversal {
 		stack.push(root);
 		while(!stack.isEmpty()) {
 			TreeNode<Integer> node = stack.pop();
-			System.out.print(node.getData() + ",");
-			if(node.getRigt()!=null)
-				stack.push(node.getRigt());
+			process(node.getData());
+			if(node.getRight()!=null)
+				stack.push(node.getRight());
 			if(node.getLeft()!=null)
 				stack.push(node.getLeft());
 		}
@@ -71,8 +73,8 @@ public class TreeTraversal {
 			}else {
 				if(!stack.isEmpty()) {
 					TreeNode<Integer> node = stack.pop();
-					System.out.print( node.getData() + ",");					
-					current = node.getRigt();
+					process( node.getData() );
+					current = node.getRight();
 				}else {
 					isDone = true;
 				}
@@ -91,16 +93,34 @@ public class TreeTraversal {
 			TreeNode<Integer> node = stack1.pop();
 			if(node.getLeft()!=null)
 				stack1.push(node.getLeft());
-			if(node.getRigt()!=null)
-				stack1.push(node.getRigt());
+			if(node.getRight()!=null)
+				stack1.push(node.getRight());
 			
 			stack2.push(node);
 		}
 		while(!stack2.isEmpty()) {
 			TreeNode<Integer> node = stack2.pop();
-			System.out.print(node.getData() + ",");
+			process( node.getData() );
 		}
 		
+	}
+
+	private static void levelOrder(TreeNode<Integer> root) {
+
+		Queue<TreeNode<Integer>> queue = new LinkedList<>();
+        queue.offer(root);
+
+		while(!queue.isEmpty()) {
+			TreeNode<Integer> node  = queue.poll();
+			process(node.getData());
+			if( node.getLeft() != null)
+				queue.offer(node.getLeft());
+			if( node.getRight() != null)
+				queue.offer(node.getRight());
+		}
+	}
+	private static void process(Integer s) {
+		System.out.print(s + ",");
 	}
 
 	public static void main(String[] args) {
@@ -137,6 +157,9 @@ public class TreeTraversal {
 		System.out.println();
 		System.out.println("Post OrderIterativeTwoStacks");
 		postOrderIterativeTwoStacks(root);
+		System.out.println();
+		System.out.println("Level Order");
+		levelOrder(root);
 
 	}
 
