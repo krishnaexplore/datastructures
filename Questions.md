@@ -1,1 +1,1 @@
-Give an algorithm for finding the shortest path between two nodes in a BST
+- Give an algorithm for finding the shortest path between two nodes in a BST
