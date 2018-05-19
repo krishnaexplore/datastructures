@@ -15,7 +15,7 @@
 
 - Given a singly linked list where elements are sorted in ascending order, convert it to a height balanced BST.
 
--Give an algorithm for finding the k-th smallest element in BST
+- Give an algorithm for finding the k-th smallest element in BST
   * hint : inorder traversal
 
 - Give an algorithm for finding the union and intersection of BSTs. Assume parent pointers are available (say threaded binary trees). Also assume the lengths of two BST's are m and n respectively
@@ -33,7 +33,19 @@
 - Given a BST check whether it is AVL tree or not
 - Given a height, give an algorithm for generating an AVL tree with minimum number of nodes.
 
-- Given an AVL tree with n integer items and two integers a andb, where a and b can be any integers with a <= b. implement an algorithm to count the number of nodes in the range [a,b]
+- Given an AVL tree with n integer items and two integers a andb, where a and b can be any integers with a <= b. implement an algorithm to count the number of nodes in the range [a,b ]
+
+- Median in an infinite series of Integers
+
+- Given a binary tree, how do you remove all the half nodes (which has only one child)? Note that we should not touch leaves
+  * post order traversal
+
+- Given a binary tree, how do you remove leaves of it
+  * post order traversal
+
+- Given a BST and two integers (minimum and maximum integers) as parameters, how do you remove (prune) elements from the tree any elements that are not within that range, inclusive.
+
+- Given a binary tree, how do you connect all the adjacent nodes at the same level? Assume that given binary tree has next pointer along with left and right pointers.
 
 
-
+- Assume that a set S on n numbers are stored in some form of balanced binary search tree; i.e the depth of the tree is O(logn). In addition to the key value and the pointers to children, assume that every node contains the number of nodes in its subtree. Specify a reason(s) why a balanced binary tree can be a better option than a complete binary tree for storing that set S.
