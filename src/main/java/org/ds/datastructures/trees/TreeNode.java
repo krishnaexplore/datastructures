@@ -22,5 +22,10 @@ public class TreeNode<T> {
 		return rightNode;
 	}
 	
+	@Override
+	public String toString() {
+		return data.toString();
+	}
+	
 	
 }

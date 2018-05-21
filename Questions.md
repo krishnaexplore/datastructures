@@ -1,3 +1,39 @@
+- Give an algorithm for finding maximum element in binary tree. (recursion & iteration)
+- Give an algorithm for searching an element in binary tree (recursion & iteration)
+- Give an algorithm for inserting an element into binary tree
+- Give an algorithm for finding the size of binary tree. (recursion & iteration)
+- Give an algorithm for printing the level order data in reverse (level order -- instead of S.o.P push it to stack and display later) 
+- Give an algorithm for deleting the tree (Use post order LRD)
+- Give an algorithm for finding the height (or depth) of the binary tree. (recursion and iteration)
+- Give an algorithm for finding the deepest node in a binary tree.
+- Give an algorithm for deleting a element from binary tree.
+- Give an algorithm to finding the number of leaves in the binary tree without using recursion.
+- Give an algorithm to find the number of full nodes in the binary tree without using recursion
+- Give an algorithm to find the number of half nodes in the binary tree without using recursion
+-  Given two binary trees return true if they are structurally identical 
+-  Give an algorithm for finding the diameter of the binary tree. The diameter of a tree (some times called the width) is the number   of   nodes on longest path b/w two leaves in the tree
+- Give an algorithm to find the level which is having maximum sum in the binary tree.
+- Given a binary tree, print out all of its root-to-leaf paths
+- Given an algorithm for checking the existence of path with given sum. That means, given a sum check whether there exists a path from root to any of the nodes.
+- Given an algorithm for finding the sum of all elements in binary tree (recursion & iteration)
+- Give an algorithm for converting a tree to its mirror. Mirror of a tree is another tree with left and right children of non-leaf nodes interchanged.
+- Given two trees, give an algorithm for checking whether they are mirrors of each other.
+- Give an algorithm for constructing binary tree from given inorder and preorder traversals
+    if we are given two traversal sequences, can we construct the binary tree uniquiely.
+
+- Give an algorithm for printing all the ancestors of a node in a binary tree. for the below tree, for 7 the ancestors are 1,3,7
+- Give an algorithm for finding LCA of two nodes in a binary tree.
+    zigzag tree traversal
+- Give an algorithm for finding the vertical sum of a binary tree.
+- how many different binary trees are possible with n nodes
+- Given a tree with special property where leaves are represented with L and internal node with I. Also, assume that each node has either 0 or 2 children. Given preorder traversal of this tree. construct the tree[l]
+- Given a tree, give an algorithm for finding the sum of all the elements of the tree.
+- For 4-ary tree , what is the maximum possible height with 100 nodes? assume height of a single node is 0
+- For 4-ary tree, what is the minimum possible height with n nodes?
+- Given a parent array p, where p[i] indicates the parent of ith node in the tree (assume parent of root node is indicated with -1). 
+- Give algorithm for finding the height or depth of tree.
+- Given a node in the generic tree. 
+
 - Give an algorithm for finding the shortest path between two nodes in a BST
 
 - Give an alogorithm for counting the number of BST's possible with n nodes
