@@ -90,6 +90,18 @@ public class Graph<T> {
 	}
 	
 	public static void main(String[] args) {
+		
+		/**
+		 *     0---------------->1
+		 *     |                /
+		 *     |             /
+		 *     |            /
+		 *     |          /
+		 *     v       /
+		 *     2                3
+		 */
+		
+		
 		int numberVertices = 4;
 		Vertex<Integer> v1 = new Vertex<>(0);
 		Vertex<Integer> v2 = new Vertex<>(1);
@@ -108,10 +120,38 @@ public class Graph<T> {
 		graph.addEdge(v3, v4);
 		graph.addEdge(v4, v4);
 		
+		
+		
 		//graph.dfsIterative(v3);
-		graph.dfsRecursive(v3);
+		//graph.dfsRecursive(v3);
 		//graph.bfsIterative(v3);
+		
+		System.out.println(   "Is Cycle Exists     " +graph.isCycleExistsInDirectedGraph( v1 ) );
 	}
+	
+	public boolean isCycleExistsInDirectedGraph(Vertex<T> source) {
+		
+		Stack<Vertex<T>> stack = new Stack<>();
+		stack.push( source );
+		while( !stack.isEmpty() ) {
+			
+			Vertex<T> item = stack.pop();
+			if( item.isVisited( ) )
+				return true;
+			
+			item.setVisited( true );
+			List<Vertex<T>> nighours = item.getEdges();
+			
+			if( nighours != null ) {
+				ListIterator<Vertex<T>> lt = nighours.listIterator();
+				while(lt.hasNext()) {
+					stack.push( lt.next() );
+				}
+			}
+		}
+		return false;
+	}
+	
 	
 	
 }
