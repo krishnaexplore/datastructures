@@ -18,10 +18,15 @@ public class TreeNode<T> {
 	public TreeNode<T> getLeft() {
 		return leftNode;
 	}
+	public void setLeft(TreeNode<T> left) {
+		this.leftNode = left;
+	}
 	public TreeNode<T> getRight(){
 		return rightNode;
 	}
-	
+	public void setRight(TreeNode<T> right) {
+		this.rightNode = right;
+	}
 	@Override
 	public String toString() {
 		return data.toString();
