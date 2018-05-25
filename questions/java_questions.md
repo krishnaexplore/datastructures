@@ -1,0 +1,68 @@
+- What do you mean by platform independence of Java?
+- What is JVM and is it platform independent?
+- What is the difference between JDK and JVM?
+- What is the difference between JVM and JRE?
+- Which class is the superclass of all classes?  
+- Why Java doesn’t support multiple inheritance?
+- Why Java is not pure Object Oriented language?
+- What is difference between path and classpath variables?
+- What is the importance of main method in Java?
+- What is overloading and overriding in java?
+- Can we overload main method?
+- Can we have multiple public classes in a java source file?
+- What is Java Package and which package is imported by default?
+- What are access modifiers?
+- What is final keyword?
+- What is static keyword?
+- What is finally and finalize in java?
+- Can we declare a class as static?
+- What is static import?
+- What is try-with-resources in java?
+- What is multi-catch block in java?
+- What is static block?
+- What is an interface?
+- What is an abstract class?
+- What is the difference between abstract class and interface?
+- Can an interface implement or extend another interface?
+- What is Marker interface?
+- What are Wrapper classes?
+- What is Enum in Java?
+- What is Java Annotations?
+- What is Java Reflection API? Why it’s so important to have?
+- What is composition in java?
+- What is the benefit of Composition over Inheritance?
+- How to sort a collection of custom Objects in Java?
+- What is inner class in java?
+- What is anonymous inner class?
+- What is Classloader in Java?
+- What are different types of classloaders?
+- What is ternary operator in java?
+- What does super keyword do?
+- What is break and continue statement?
+- What is this keyword?
+- What is default constructor?
+- Can we have try without catch block?
+- What is Garbage Collection?
+- What is Serialization and Deserialization?
+- How to run a JAR file through command prompt?
+- What is the use of System class?
+- What is instanceof keyword?
+- Can we use String with switch case?
+- Which two method you need to implement for key Object in HashMap
+- What is immutable object? Can you write immutable object?
+- What is the difference between creating String as ne-  and literal?
+- What is difference between StringBuffer and StringBuilder in Java ?
+- Write code to find the First non repeated character in the String  ?
+- What is the difference between ArrayList and Vector ?
+- How do you handle error condition  while writing stored procedure or accessing stored procedure from java?
+- What is difference between Executor.submi-  and Executer.execut-  method ?
+- What is the difference between factory and abstract factory pattern?
+- What is Singleton? is it better to make whole method synchronized or only critical section synchronized ?
+- Can you write critical section code for singleton?
+- Can you write code for iterating over hashmap in Java 4 and Java 5 ?
+- What’s wrong using HashMap in multithreaded environment? When ge-  method go to infinite loop ?
+- What do you understand by thread-safety ? Why is it required ? And finally, how to achieve thread-safety in Java Applications ?
+- What will happen if you call return statement or System.exit on try or catch block ? will finally block execute?
+-  If a method throws NullPointerException in super class, can we override it with a method which throws RuntimeException?
+-  What is difference between CyclicBarrier and CountDownLatch in Java
+- How do you ensure that N thread can access N resources without deadlock

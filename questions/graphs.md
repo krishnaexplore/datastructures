@@ -1,0 +1,2 @@
+- In an undirected simple graph with n vertices, what is the maximum number of edges? self loops are not allowed
+- How many different adjacency matrices does a graph with n vertices and edges have
