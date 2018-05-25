@@ -28,6 +28,35 @@ public class LinkedList<T> {
 		}
 	}
 	
+	public LinkedListNode<T> findNthFromEnd(int n) {
+		if(head==null)
+			return null;
+		LinkedListNode<T> current = head;
+		LinkedListNode<T> previous = head;
+		int count = 0;
+		while(current!=null) {
+			
+			current = current.getNext();
+			if(count >= n) {
+				previous = previous.getNext();
+			}
+			count++;
+		}
+		return previous;
+	}
+	
+	public LinkedListNode<T> findMiddle() {
+		if (head == null)
+			return null;
+		LinkedListNode<T> faster = head;
+		LinkedListNode<T> slower = head;
+		while (faster != null && faster.getNext()!=null) {
+			faster = faster.getNext().getNext();
+			slower = slower.getNext();
+		}
+		return slower;
+	}
+	
 	@Override
 	public String toString() {
 		return "LinkedList [head=" + head + "]";

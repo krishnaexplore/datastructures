@@ -15,6 +15,10 @@ public class TreeNode<T> {
 	public T getData() {
 		return data;
 	}
+	
+	public void setData(T data) {
+		this.data = data;
+	}
 	public TreeNode<T> getLeft() {
 		return leftNode;
 	}
