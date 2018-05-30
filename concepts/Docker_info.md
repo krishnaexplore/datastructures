@@ -6,7 +6,7 @@
 - shorten the cycle between writing code and running code.
 - Docker does this by combining kernel containerization features with workflows and tooling
 
-##Docker components
+## Docker components
 
 - Docker images : blue prints of our application.
 - Docker Container : created from docker image and a real instance of our application.
