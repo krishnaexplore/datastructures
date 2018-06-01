@@ -2,7 +2,7 @@ package org.ds.datastructures.threads;
 
 import java.util.Scanner;
 
-class Processor extends Thread{
+class Processor2 extends Thread{
 	
 	private boolean running = true; // this may cached in each thread, make volatile -> volatile makes threads not to cache
 	@Override
@@ -28,7 +28,7 @@ public class App02 {
 
 	//cache
 	public static void main(String[] args) {
-		Processor proc1 = new Processor();
+		Processor2 proc1 = new Processor2();
 		proc1.start();
 		System.out.println("press return key");
 		Scanner s = new Scanner(System.in);

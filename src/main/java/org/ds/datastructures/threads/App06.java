@@ -5,11 +5,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-class Processor10 implements Runnable{
+class Processor6 implements Runnable{
 	
 	private CountDownLatch latch;
 	
-	public Processor10(CountDownLatch latch) {
+	public Processor6(CountDownLatch latch) {
 		this.latch = latch;
 	}
 	
@@ -39,7 +39,7 @@ public class App06 {
 		ExecutorService executor = Executors.newFixedThreadPool(3);
 		
 		for(int i=0; i<3; i++) {
-			executor.submit(new Processor10(latch));
+			executor.submit(new Processor6(latch));
 		}
 		
 		try {

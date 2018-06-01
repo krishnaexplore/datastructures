@@ -28,7 +28,7 @@ class Processor8 {
 		}
 	}
 }
-public class App8 {
+public class App08 {
 
 	
 	public static void main(String[] args) throws InterruptedException {

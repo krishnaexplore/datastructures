@@ -48,7 +48,7 @@ class Processor9 {
 /**
  * Producer Consumer problem with help of locks
  * */
-public class App9 {
+public class App09 {
 
 	public static void main(String[] args) throws InterruptedException {
 		final Processor9 processor = new Processor9();
