@@ -8,7 +8,7 @@ import java.util.concurrent.BlockingQueue;
 /**
  * Resovling producer and consumer problem with help of BlockingQueue
  * */
-public class App7 {
+public class App07 {
 
 	private static BlockingQueue<Integer> blockingQueue = new ArrayBlockingQueue<>(10);
 	
