@@ -1,4 +1,6 @@
+explaining : port in service object
 
+https://stackoverflow.com/questions/49981601/difference-between-targetport-and-port-in-kubernetes-service-definition
 
 ## start Scaling And Managing Deployments
 
